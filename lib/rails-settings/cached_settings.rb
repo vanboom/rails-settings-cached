@@ -17,9 +17,9 @@ module RailsSettings
     end    
     
     def self.save_default(key,value)
-      if self.send(key) == nil
+      #if self.send(key) == nil
         self.send("#{key}=",value)
-      end
+      #end
     end
   end
 end
